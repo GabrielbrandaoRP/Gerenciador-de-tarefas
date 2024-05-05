@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
 *{
     margin: 0;
-    padding: 10px 0;
-    font-family: system-ui, -apple-system, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px 0 0 0;
+    font-family: 'Monteserrat', sans-serif;
 
 }
 
@@ -10,9 +15,7 @@ body{
     color: #18181b;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
-    height: 150vh;
     width: 98vw;
 }
 
@@ -27,16 +30,18 @@ body{
 }
 .title{
     display: flex;
-    justify-content: start;
-    gap: 35px;
+    flex-direction: row;
     align-items: center;
-    border-radius: 15px;
+    justify-content: start;
+    gap: 30px;
+    height: 35px;
     width: 420px;
-    height: 30px;
     background: #e4e4e7;
+    border-radius: 10px;
     & h1 {
         font-size: 1.5rem;
         color: #3f3f46;
+        margin-bottom: 15px;
     }
     
 }
@@ -45,6 +50,7 @@ body{
     color: #0284c7;
     padding-left: 15px;
     text-decoration: none;
+    margin-bottom: 25px;
 }
 #form{
     display: flex;
@@ -63,7 +69,7 @@ body{
         max-width: 400px;
     }
     & label{
-        margin-right: 270px;
+        margin-right: 260px;
     }
     & textarea{
         padding: 10px;
@@ -72,11 +78,19 @@ body{
 
 
     & button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
         width: 400px;
         background: #e4e4e7;
         color: #0284c7;
         height: 40px;
         cursor: pointer;
+        & i {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
     }
 
 
@@ -91,7 +105,7 @@ body{
 
 table {
     width: 80%;
-    
+    margin-bottom: 30px;
   }
   
   th, td {
@@ -118,3 +132,67 @@ table {
     border-radius: 4px;
     cursor: pointer;
   }
+
+
+footer{
+    background-color: #e4e4e7;
+    height: 150px;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    
+} 
+.contentFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.titleFooter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    & h1 {
+        color: #3f3f46;
+        font-size: 1.2rem;
+    }
+
+    & a {
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #18181b;
+    }
+}
+.socialIcons{
+    display: flex;
+    gap: 40px;
+    & a {
+        height: 30px;
+        font-size: 2rem;
+    }
+    
+}
+
+.iconGithub{
+
+    color: #000;
+
+}
+.iconLinkedin{
+
+    color: #0a66c2;
+
+}
+.iconInstagram{
+
+    color: rgb(196, 15, 196);
+
+}
+
+
