@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 10px 0;
+    font-family: system-ui, -apple-system, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background: #f4f4f5;
+    color: #18181b;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 150vh;
+    width: 98vw;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    width: 70%;
+}
+.title{
+    display: flex;
+    justify-content: start;
+    gap: 35px;
+    align-items: center;
+    border-radius: 15px;
+    width: 420px;
+    height: 30px;
+    background: #e4e4e7;
+    & h1 {
+        font-size: 1.5rem;
+        color: #3f3f46;
+    }
+    
+}
+
+.backIcon{
+    color: #0284c7;
+    padding-left: 15px;
+    text-decoration: none;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+    height: 50vh;
+    & input, textarea, button{
+        border: none;
+        border-radius: 10px;
+        min-height: 50px;
+        padding: 0 10px;
+        width: 400px;
+        max-width: 400px;
+    }
+    & label{
+        margin-right: 270px;
+    }
+    & textarea{
+        padding: 10px;
+       min-width: 400px;
+    }
+
+
+    & button{
+        width: 400px;
+        background: #e4e4e7;
+        color: #0284c7;
+        height: 40px;
+        cursor: pointer;
+    }
+
+
+}
+.lineDiv{
+    background: transparent;
+    color: transparent;
+    border-top:  #e4e4e7 1px solid;
+    width: 100%;
+    margin-top: 10px;
+}
+
+table {
+    width: 80%;
+    
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilização zebrada */
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilização do botão de excluir */
+  .delete-btn {
+    background-color: #e4e4e7;
+    color: #f44336;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }

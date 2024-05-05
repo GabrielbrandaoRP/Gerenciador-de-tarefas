@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0b6a9215c3.js" crossorigin="anonymous"></script>
+   
+    <title>Tabelas JS</title>
+</head>
+<body>
+    <div id="container">
+        <div class="title">
+
+            <a href="table.html" class="backIcon">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>Voltar</span>
+            </a>
+            <h1>Lista de tarefas</h1>
+        </div>
+        <div id="form" >
+           
+            <label>Titulo da tarefa:</label>
+            <input type="text" id="taskTitle" placeholder="Insira o titulo da tarefa">
+
+            <label >Descreva a tarefa:</label>
+            <textarea placeholder="Digite a descrição da tarefa ser adicionada"
+             id="textField"></textarea>
+
+            <button onclick="addTask()"
+             >
+                Adicionar tarefa
+            </button>
+        </div>
+
+
+        <div class="lineDiv">.</div>
+
+
+        <table id="taskTable">
+          
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="taskList">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
